@@ -31,14 +31,11 @@ h2 {
   margin-top: 13px;
   font-size: 27px;
 }
-.for-result {
-  border-right: none;
-}
 .input-group,
 .input-group-text {
   font-family: "PT Serif", serif;
 }
-.btn {
-  font-size: 20px;
+button.btn {
+  font-size: 23px;
   font-family: "Bebas Neue", cursive;
 }

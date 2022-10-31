@@ -24,46 +24,53 @@
     <div class="container">
       <div class="calculator-content">
         <h1>Loan Calculator</h1>
-        <div class="input-group mb-3">
-          <span class="input-group-text">$</span>
-          <div class="form-floating">
-            <input
-              type="text"
-              class="form-control"
-              id="floatingInputGroup1"
-              placeholder="Username"
-            />
-            <label for="floatingInputGroup1">Loan Amount</label>
+        <form id="loan-form">
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInputGroup1 amount"
+                  placeholder="Username"
+                />
+                <label for="floatingInputGroup1">Loan Amount</label>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text">%</span>
-          <div class="form-floating">
-            <input
-              type="text"
-              class="form-control"
-              id="floatingInputGroup1"
-              placeholder="Username"
-            />
-            <label for="floatingInputGroup1">Annual Interest</label>
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <span class="input-group-text">%</span>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInputGroup1 interest"
+                  placeholder="Username"
+                />
+                <label for="floatingInputGroup1">Annual Interest</label>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="input-group mb-3">
-          <div class="form-floating">
+          <div class="form-group">
             <input
-              type="text"
+              type="number"
               class="form-control"
-              id="floatingInputGroup1"
-              placeholder="Username"
+              id="floatingInputGroup1 years"
+              placeholder="Repayment Years"
             />
-            <label for="floatingInputGroup1">Repayment Years</label>
           </div>
-        </div>
-        <div class="d-grid gap-2">
-          <button class="btn btn-dark" type="button">Calculate</button>
-        </div>
-        <h2>Results</h2>
+          <div class="form-group">
+            <div class="d-grid gap-2">
+              <button class="btn btn-dark mt-3" type="button">Calculate</button>
+            </div>
+          </div>
+        </form>
+        <!--Loader-->
+        <!--Results-->
 
+        <h2>Results</h2>
         <div class="input-group mb-3">
           <span class="input-group-text for-result" id="basic-addon3"
             >Monthly Payment</span
@@ -71,8 +78,9 @@
           <input
             type="text"
             class="form-control bg-primary bg-opacity-25"
-            id="basic-url"
+            id="monthly-payment"
             aria-describedby="basic-addon3"
+            disabled
           />
         </div>
 
@@ -85,6 +93,7 @@
             class="form-control bg-primary bg-opacity-25"
             id="basic-url"
             aria-describedby="basic-addon3"
+            disabled
           />
         </div>
 
@@ -97,6 +106,7 @@
             class="form-control bg-primary bg-opacity-25"
             id="basic-url"
             aria-describedby="basic-addon3"
+            disabled
           />
         </div>
       </div>
