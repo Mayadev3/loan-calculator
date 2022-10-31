@@ -8,10 +8,20 @@ body {
   min-height: 100vh; /* we need to assign a height so the items knows where to center*/
   overflow: hidden; /*so there are no scroll bars visible*/
   background-color: #1e429f;
+}
+.img-calculator-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 80px;
 }
+.image {
+  width: 500px;
+  height: 340px;
+}
+
 .container {
   border-radius: 8px;
   width: 80vh;
@@ -19,6 +29,7 @@ body {
   margin-top: 40px;
   background-color: white;
 }
+
 h1 {
   text-align: center;
   font-size: 33px;
